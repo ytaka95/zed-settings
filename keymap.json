@@ -1,29 +1,12 @@
 [
   {
-    "bindings": {
-      // Built-in
-      "ctrl-g": "menu::Cancel",
-      // "ctrl-x 5 2": "workspace::NewWindow",
-      "ctrl-j ctrl-c": "zed::Quit",
-      "ctrl-j ctrl-f": "workspace::Open",
-      "ctrl-j k": "pane::CloseActiveItem",
-      // "ctrl-j o": "workspace::ActivateNextPane",
-      // Project
-      "ctrl-x p p": "projects::OpenRecent",
-      // Custom
-      // "cmd-8": "editor::SelectLargerSyntaxNode",
-      // "cmd-9": "editor::SelectSmallerSyntaxNode",
-      // "cmd-\\": "editor::ToggleCodeActions",
-      // "ctrl-x c": "workspace::NewFile",
-      // "ctrl-x shift-k": "pane::CloseInactiveItems",
-      // "ctrl-x shift-o": "workspace::ActivatePreviousPane"
-    }
-  },
-  {
     "context": "Editor",
     "bindings": {
       // Built-in
       "ctrl-g": "editor::Cancel",
+      "ctrl-j ctrl-k": "pane::CloseActiveItem",
+      "ctrl-j ctrl-c": "zed::Quit",
+      "ctrl-j ctrl-f": "workspace::Open",
       "ctrl-j ctrl-s": "workspace::Save",
       "ctrl-j ctrl-w": "workspace::SaveAs",
       "ctrl-/": "editor::Undo",
@@ -34,15 +17,9 @@
       "ctrl-w": "editor::Cut",
       "alt-w": "editor::Copy",
       "ctrl-y": "editor::Paste",
-      // "ctrl-backspace": "editor::DeleteToPreviousSubwordStart",
-      // "cmd-backspace": "editor::DeleteToPreviousSubwordStart",
       "ctrl-[ ctrl-d": "editor::DeleteToNextSubwordEnd",
-      // "cmd-<": "editor::MoveToBeginning",
-      // "cmd->": "editor::MoveToEnd",
       "ctrl-[ ctrl-b": "editor::MoveToPreviousWordStart",
       "ctrl-[ ctrl-f": "editor::MoveToNextWordEnd",
-      // "cmd-[": "editor::MoveToStartOfParagraph",
-      // "cmd-]": "editor::MoveToEndOfParagraph",
       "ctrl-v": [
         "editor::MovePageDown",
         {
@@ -55,17 +32,10 @@
           "center_cursor": true
         }
       ],
-      // "ctrl-x h": "editor::SelectAll",
-      // "ctrl-cmd-<": "editor::SelectToBeginning",
-      // "ctrl-cmd->": "editor::SelectToEnd",
       "ctrl-shift-p": "editor::SelectUp",
       "ctrl-shift-n": "editor::SelectDown",
       "ctrl-shift-b": "editor::SelectLeft",
       "ctrl-shift-f": "editor::SelectRight",
-      "cmd-shift-b": "editor::SelectToPreviousWordStart",
-      "cmd-shift-f": "editor::SelectToNextWordEnd",
-      // "cmd-{": "editor::SelectToStartOfParagraph",
-      // "cmd-}": "editor::SelectToEndOfParagraph",
       "ctrl-;": [
         "editor::ToggleComments",
         {
@@ -74,47 +44,7 @@
       ],
       // xref
       // "cmd-.": "editor::GoToDefinition",
-      // flycheck
-      // "ctrl-c ! n": "editor::GoToDiagnostic",
-      // "ctrl-c ! p": "editor::GoToPrevDiagnostic",
-      // iedit
-      // "ctrl-;": "editor::Rename",
-      // Custom
-      // "cmd-p": "editor::MoveLineUp",
-      // "cmd-n": "editor::MoveLineDown",
-      // "ctrl-c n": "editor::GoToHunk",
-      // "ctrl-c p": "editor::GoToPrevHunk",
-      // "ctrl-c ctrl-d": "editor::Hover",
-      // "ctrl-c d": "editor::DuplicateLine",
       "ctrl-c o": "editor::RevealInFinder",
-      // "ctrl-cmd-\\": "editor::Format",
-      // "ctrl-shift-cmd-l": "editor::SplitSelectionIntoLines",
-      // "ctrl-shift-cmd-p": "editor::AddSelectionAbove",
-      // "ctrl-shift-cmd-n": "editor::AddSelectionBelow",
-      // "ctrl-<": [
-      //   "editor::SelectPrevious",
-      //   {
-      //     "replace_newest": false
-      //   }
-      // ],
-      // "ctrl-cmd-<": [
-      //   "editor::SelectPrevious",
-      //   {
-      //     "replace_newest": true
-      //   }
-      // ],
-      // "ctrl->": [
-      //   "editor::SelectNext",
-      //   {
-      //     "replace_newest": false
-      //   }
-      // ]
-      // "ctrl-cmd->": [
-      //   "editor::SelectNext",
-      //   {
-      //     "replace_newest": true
-      //   }
-      // ],
     }
   },
   {
@@ -122,10 +52,6 @@
     "bindings": {
       // Built-in
       "ctrl-g": "editor::Cancel", // NOT WORKING
-      // "ctrl-j": "editor::Newline",
-      // "cmd-q": "editor::ToggleSoftWrap",
-      // imenu
-      // "ctrl-c i": "outline::Toggle",
       // isearch
       "ctrl-s": [
         "buffer_search::Deploy",
@@ -159,12 +85,6 @@
       // Built-in
       "ctrl-j 2": "pane::SplitDown",
       "ctrl-j 3": "pane::SplitRight",
-      // isearch
-      // "cmd-i": "search::ToggleCaseSensitive",
-      // "cmd-s": "search::ToggleWholeWord",
-      // "cmd-r": "search::ToggleRegex",
-      // Custom
-      // "cmd-ctrl-e": "workspace::ToggleZoom",
       "cmd-1": ["pane::ActivateItem",0 ],
       "cmd-2": ["pane::ActivateItem", 1],
       "cmd-3": ["pane::ActivateItem", 2],
@@ -189,6 +109,7 @@
     "context": "Workspace",
     "bindings": {
       // Built-in
+      "ctrl-g": "menu::Cancel",
       "ctrl-[ x": "command_palette::Toggle",
       "ctrl-j ctrl-o": "file_finder::Toggle",
       // project
@@ -196,14 +117,10 @@
       "ctrl-x p i": "project_symbols::Toggle",
       "ctrl-x p g": "workspace::NewSearch",
       "ctrl-x p m": "diagnostics::Deploy",
-      // flycheck
-      // "ctrl-c ! l": "diagnostics::Deploy",
       // Custom
       "ctrl-j ctrl-t": "terminal_panel::ToggleFocus",
       "ctrl-o": "terminal_panel::ToggleFocus",
-      // "cmd-ctrl-s": "workspace::ToggleLeftDock",
       "ctrl-c shift-i": "project_symbols::Toggle"
-      // "ctrl-h k": "zed::OpenKeymap" // NOT WORKING
     }
   },
   {
@@ -211,8 +128,7 @@
     "bindings": {
       "ctrl-o": "workspace::ToggleBottomDock",
       "cmd-!": "workspace::ToggleBottomDock",
-      "cmd-t": "workspace::NewTerminal",
-      "ctrl-j": "workspace::Confirm"
+      "cmd-t": "workspace::NewTerminal"
     }
   }
 ]
