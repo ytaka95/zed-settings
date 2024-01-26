@@ -17,6 +17,8 @@
       "ctrl-w": "editor::Cut",
       "alt-w": "editor::Copy",
       "ctrl-y": "editor::Paste",
+      "cmd-[": "pane::GoBack",
+      "cmd-]": "pane::GoForward",
       "ctrl-[ ctrl-d": "editor::DeleteToNextSubwordEnd",
       "ctrl-[ ctrl-b": "editor::MoveToPreviousWordStart",
       "ctrl-[ ctrl-f": "editor::MoveToNextWordEnd",
