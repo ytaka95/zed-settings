@@ -95,16 +95,7 @@
       "cmd-6": ["pane::ActivateItem", 5],
       "cmd-7": ["pane::ActivateItem", 6],
       "cmd-8": ["pane::ActivateItem", 7],
-      "cmd-9": ["pane::ActivateItem", 8],
-      "ctrl-j 1": ["pane::ActivateItem",0 ],
-      "ctrl-j 2": ["pane::ActivateItem", 1],
-      "ctrl-j 3": ["pane::ActivateItem", 2],
-      "ctrl-j 4": ["pane::ActivateItem", 3],
-      "ctrl-j 5": ["pane::ActivateItem", 4],
-      "ctrl-j 6": ["pane::ActivateItem", 5],
-      "ctrl-j 7": ["pane::ActivateItem", 6],
-      "ctrl-j 8": ["pane::ActivateItem", 7],
-      "ctrl-j 9": ["pane::ActivateItem", 8]
+      "cmd-9": ["pane::ActivateItem", 8]
     }
   },
   {
