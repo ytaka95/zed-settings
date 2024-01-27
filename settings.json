@@ -7,9 +7,16 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "theme": "Ayu Mirage",
+  "format_on_save": "off",
+  "theme": "Ayu Light",
   "ui_font_size": 16,
   "buffer_font_size": 15,
   "confirm_quit": true,
-  "show_whitespaces": "all"
+  "soft_wrap": "editor_width",
+  "show_whitespaces": "all",
+  "terminal": {
+    "font_size": 13,
+    "copy_on_select": true,
+    "font_family": "Monaco"
+  }
 }

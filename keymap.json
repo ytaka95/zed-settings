@@ -46,7 +46,7 @@
       ],
       // xref
       // "cmd-.": "editor::GoToDefinition",
-      "ctrl-c o": "editor::RevealInFinder",
+      "ctrl-c o": "editor::RevealInFinder"
     }
   },
   {
@@ -87,15 +87,42 @@
       // Built-in
       "ctrl-j 2": "pane::SplitDown",
       "ctrl-j 3": "pane::SplitRight",
-      "cmd-1": ["pane::ActivateItem",0 ],
-      "cmd-2": ["pane::ActivateItem", 1],
-      "cmd-3": ["pane::ActivateItem", 2],
-      "cmd-4": ["pane::ActivateItem", 3],
-      "cmd-5": ["pane::ActivateItem", 4],
-      "cmd-6": ["pane::ActivateItem", 5],
-      "cmd-7": ["pane::ActivateItem", 6],
-      "cmd-8": ["pane::ActivateItem", 7],
-      "cmd-9": ["pane::ActivateItem", 8]
+      "cmd-1": [
+        "pane::ActivateItem",
+        0
+      ],
+      "cmd-2": [
+        "pane::ActivateItem",
+        1
+      ],
+      "cmd-3": [
+        "pane::ActivateItem",
+        2
+      ],
+      "cmd-4": [
+        "pane::ActivateItem",
+        3
+      ],
+      "cmd-5": [
+        "pane::ActivateItem",
+        4
+      ],
+      "cmd-6": [
+        "pane::ActivateItem",
+        5
+      ],
+      "cmd-7": [
+        "pane::ActivateItem",
+        6
+      ],
+      "cmd-8": [
+        "pane::ActivateItem",
+        7
+      ],
+      "cmd-9": [
+        "pane::ActivateItem",
+        8
+      ]
     }
   },
   {
